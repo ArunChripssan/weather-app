@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Weather App</title>
+        <link rel="styleSheet" href="styles.css" />
+        <link
+            href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+            rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    </head>
+    <body>
+        <div class="header">
+            <h1>Weather</h1>
+            <form class="search-bar">
+                <input
+                    class="xxx"
+                    type="text"
+                    placeholder="Enter City Name"
+                    id="hello"
+                />
+                <button type="button">
+                    <i class="bx bx-search-alt"></i>
+                </button>
+            </form>
+        </div>
+        <div class="container">
+            <div class="card">
+                <h2>Weather Status</h2>
+                <div class="city">
+                    <img src="Assets/images/location.png" />
+                    <h4 class="city-name"></h4>
+                </div>
+                <img class="weather-icon" src="Assets/images/clear.png" />
+                <h4 class="temp"></h4>
+                <div class="hum-wind">
+                    <div class="humidity">  
+                        <img src="Assets/images/humidity.png" />
+                        <p class="hum-value"></p>
+                        <p>Humidity</p>
+                    </div>
+                    <div class="wind">
+                        <img src="Assets/images/wind.png" />
+                        <p class="wind-speed"></p>
+                        <p>Wind speed</p>
+                    </div>
+                </div>
+            </div>
+            <div class="zeroState-card">
+                <p>Please Search a City</p>
+                <img src="Assets/images/search-bg.png" >
+            </div>
+        </div>
+        <script src="script.js"></script>
+
+    </body>
+</html>
